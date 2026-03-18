@@ -1,9 +1,37 @@
+![GitHub stars](https://img.shields.io/github/stars/yourname/Test-VPS-network-status)
+![GitHub forks](https://img.shields.io/github/forks/yourname/Test-VPS-network-status)
+![License](https://img.shields.io/github/license/yourname/Test-VPS-network-status)
 # Test-VPS-network-status
-One-clinck test of the VPS average latency,packet loss rate,routing nodes,and bandwidth speed.
-一键测试 VPS 网络状态，包括：平均延迟（Average latency）、丢包率（Packet loss rate）、路由节点（Traceroute）、近似带宽速度（Approximate bandwidth speed）
+# Test-VPS-network-status
+
+One-click test of the VPS average latency, packet loss rate, routing nodes, and bandwidth speed.
+
+一键测试 VPS 网络状态，包括：
+平均延迟（Average latency）、丢包率（Packet loss rate）、路由节点（Traceroute）、近似带宽速度（Approximate bandwidth speed）
+
+---
+
+## 目录
+## 目录
+
+- [项目介绍](#test-vps-network-status)
+- [一、使用方法](#一使用方法)
+  - [1. 保存脚本](#1-保存脚本)
+  - [2. 打开 PowerShell](#2-打开-powershell)
+  - [3. 允许脚本执行](#3-允许脚本执行只需执行一次)
+  - [4. 进入脚本所在目录](#4-进入脚本所在目录)
+  - [5. 运行脚本](#5-运行脚本)
+  - [6. 输出内容](#6-输出内容)
+- [二、注意事项 / 常见问题](#二注意事项--常见问题)
+  - [1. 不要在 CMD 中运行命令](#1-不要在-cmd-中运行命令)
+  - [2. 脚本执行被阻止](#2-脚本执行被阻止)
+  - [3. 脚本编码问题](#3-脚本编码问题)
+  - [4. Traceroute 出现 0.0.0.0](#4-traceroute-出现-0000)
+  - [5. 带宽测试为近似值](#5-带宽测试为近似值)
+- [三、建议的网络质量标准](#三建议的网络质量标准)
 
 
-一、使用方法
+# 一、使用方法
 
 ## 1. 保存脚本
 
@@ -36,6 +64,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 如图所示：
+
 ![alt text](image.png)
 
 该命令允许执行本地创建的 PowerShell 脚本。
@@ -50,6 +79,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 cd D:\ImportantDocuments\notes
 ```
 如图所示：
+
 ![alt text](image-1.png)
 ---
 
@@ -61,7 +91,7 @@ cd D:\ImportantDocuments\notes
 .\Test-VPS-Full.ps1 -VPSIP "127.0.0.1" -PingCount 5
 ```
 如图所示：
-![alt text](image-2.png)
+![alt text](image-4.png)
 
 参数说明：
 
@@ -81,12 +111,11 @@ cd D:\ImportantDocuments\notes
 * 网络路径（Traceroute）
 * 近似下载速度（Mbps）
 
----
 如图所示：
-![alt text](image-3.png)
+![alt text](image-5.png)
 
-二、注意事项 / 常见问题
-# 注意事项 / 常见问题
+---
+# 二、注意事项 / 常见问题
 
 ## 1. 不要在 CMD 中运行命令
 
@@ -165,6 +194,4 @@ UTF-8 编码
 | 延迟   | <150 ms  |
 | 丢包率  | <1%      |
 | 下载速度 | >50 Mbps |
-
-### 1️⃣ 示例输出（Example Output）
 
