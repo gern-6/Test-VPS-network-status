@@ -1,9 +1,7 @@
+# Test-VPS-network-status
 ![GitHub stars](https://img.shields.io/github/stars/yourname/Test-VPS-network-status)
 ![GitHub forks](https://img.shields.io/github/forks/yourname/Test-VPS-network-status)
 ![License](https://img.shields.io/github/license/yourname/Test-VPS-network-status)
-# Test-VPS-network-status
-# Test-VPS-network-status
-
 One-click test of the VPS average latency, packet loss rate, routing nodes, and bandwidth speed.
 
 一键测试 VPS 网络状态，包括：
@@ -11,7 +9,6 @@ One-click test of the VPS average latency, packet loss rate, routing nodes, and 
 
 ---
 
-## 目录
 ## 目录
 
 - [项目介绍](#test-vps-network-status)
@@ -185,7 +182,7 @@ UTF-8 编码
 因此该测试结果为 **近似值**，不会像专业测速工具那样精确，但对于快速评估 VPS 网络质量已经足够。
 
 
-三、建议的网络质量标准
+# 三、建议的网络质量标准
 
 一般来说，较好的 VPS 网络指标为：
 
